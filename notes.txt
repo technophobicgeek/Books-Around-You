@@ -1,0 +1,22 @@
+Steps taken in building the website:
+------------------------------------
+
+Date: 5/27/2011
+
+
+    rails new booksaroundyou -T
+    compass init rails booksaroundyou --using blueprint
+    cd booksaroundyou/
+
+
+Modify Gemfile to add rspec, webrat
+
+    bundle install
+    rails generate rspec:install
+
+Set up haml by default by adding haml-rails to Gemfile
+
+Add Pages controller
+    
+    rails generate controller Pages about contact help
+
