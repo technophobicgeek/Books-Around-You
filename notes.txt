@@ -18,5 +18,9 @@ Set up haml by default by adding haml-rails to Gemfile
 
 Add Pages controller
     
-    rails generate controller Pages about contact help
+    rails generate controller Pages about contact help home
 
+
+Added named routes to static pages
+Added some custom css
+Set up heroku site   http://booksaroundyou.heroku.com 

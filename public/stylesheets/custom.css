@@ -1,100 +1,54 @@
+/* line 1, ../../app/stylesheets/custom.scss */
 .container {
   width: 710px;
 }
 
+/* line 5, ../../app/stylesheets/custom.scss */
 body {
   background: #cff;
 }
 
+/* line 9, ../../app/stylesheets/custom.scss */
 header {
   padding-top: 20px;
 }
-
+/* line 11, ../../app/stylesheets/custom.scss */
 header img {
   padding: 1em;
   background: #fff;
   height: 6em;
 }
 
+/* line 18, ../../app/stylesheets/custom.scss */
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
   background: #fff;
 }
-
+/* line 23, ../../app/stylesheets/custom.scss */
 section h1 {
   font-size: 200%;
 }
 
 /* Links */
-
+/* line 32, ../../app/stylesheets/custom.scss */
 a {
   color: #09c;
   text-decoration: none;
+  /* Sign up button */
 }
-
+/* line 35, ../../app/stylesheets/custom.scss */
 a:hover {
   color: #069;
   text-decoration: underline;
 }
-
+/* line 39, ../../app/stylesheets/custom.scss */
 a:visited {
   color: #069;
 }
-
-/* Navigation */
-
-nav {
-  float: right;
-}
-
-nav {
-  background-color: white;
-  padding: 0 0.7em;
-  white-space: nowrap;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0.2em 0;
-}
-
-nav ul li a {
-  padding: 0 5px;
-  font-weight: bold;
-}
-
-nav ul li a:visited {
-  color: #09c;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-
-footer {
-  text-align: center;
-  margin-top: 10px;
-  width: 710px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-footer nav {
-  float: none;
-}
-
-/* Sign up button */
-
-a.signup_button {
+/* line 45, ../../app/stylesheets/custom.scss */
+a .signup_button {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -107,28 +61,74 @@ a.signup_button {
   padding: 20px;
 }
 
-/* Rounded corners */
-
-
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
+/* Navigation */
+/* line 62, ../../app/stylesheets/custom.scss */
+nav {
+  float: right;
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+/* line 67, ../../app/stylesheets/custom.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 70, ../../app/stylesheets/custom.scss */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+/* line 74, ../../app/stylesheets/custom.scss */
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+/* line 77, ../../app/stylesheets/custom.scss */
+nav ul li a:visited {
+  color: #09c;
+}
+/* line 80, ../../app/stylesheets/custom.scss */
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
+/* line 89, ../../app/stylesheets/custom.scss */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 95, ../../app/stylesheets/custom.scss */
+footer nav {
+  float: none;
+}
+
+/* Rounded corners */
+/* line 105, ../../app/stylesheets/custom.scss */
+.round {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
 
 /* User show page */
-
+/* line 114, ../../app/stylesheets/custom.scss */
 table.profile {
   width: 100%;
   margin-bottom: 0;
 }
 
+/* line 119, ../../app/stylesheets/custom.scss */
 td.main {
   width: 70%;
   padding: 1em;
 }
 
+/* line 124, ../../app/stylesheets/custom.scss */
 td.sidebar {
   width: 30%;
   padding: 1em;
@@ -136,10 +136,8 @@ td.sidebar {
   background: #ffc;
 }
 
+/* line 131, ../../app/stylesheets/custom.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
-
-
-
