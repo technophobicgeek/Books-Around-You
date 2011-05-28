@@ -21,12 +21,12 @@ gem 'xml-simple'
 # and rake tasks are available in development mode:
 
 group :development do
-  gem 'rspec-rails'
   gem 'annotate-models'
 end
 
 group :test do
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'webrat'
   gem 'factory_girl_rails'
 end
