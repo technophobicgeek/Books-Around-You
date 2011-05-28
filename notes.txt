@@ -24,3 +24,7 @@ Add Pages controller
 Added named routes to static pages
 Added some custom css
 Set up heroku site   http://booksaroundyou.heroku.com 
+
+TODO
+----
+Add some models
