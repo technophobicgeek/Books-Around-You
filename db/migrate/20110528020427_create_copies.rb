@@ -1,8 +1,8 @@
 class CreateCopies < ActiveRecord::Migration
   def self.up
     create_table :copies do |t|
-      t.integer :user_id
-      t.integer :book_id
+      t.references :user
+      t.references :book
       t.string :condition
       t.text :description
 
