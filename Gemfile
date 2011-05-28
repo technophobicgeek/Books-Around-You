@@ -12,7 +12,8 @@ gem 'gravatar_image_tag'
 
 gem 'devise', '1.3.4'
 gem 'goodreads'
-gem 'geokit-rails'
+gem 'rest-client'
+gem 'xml-simple'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
