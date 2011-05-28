@@ -1,5 +1,7 @@
 Booksaroundyou::Application.routes.draw do
 
+  devise_for :users
+
   get "copies/new"
 
   get "books/new"

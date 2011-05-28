@@ -5,8 +5,13 @@
     = csrf_meta_tag
     = render 'layouts/stylesheets'
   %body
+    %p.notice= notice
+    %p.alert= alert
+
+
     .container
       = render 'layouts/header'
       %section.round= yield
       = render 'layouts/footer'
       = debug(params) if Rails.env.development?
+
