@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails'
 
 gem "compass", ">= 0.11.1"
 gem "haml"
@@ -10,7 +10,7 @@ gem "haml-rails"
 gem 'sqlite3'
 gem 'gravatar_image_tag'
 
-gem 'devise', '1.3.4'
+gem 'devise'
 gem 'goodreads'
 gem 'rest-client'
 gem 'xml-simple'
@@ -20,14 +20,14 @@ gem 'xml-simple'
 # and rake tasks are available in development mode:
 
 group :development do
-  gem 'rspec-rails', '2.5.0'
-  gem 'annotate-models','1.0.4'
+  gem 'rspec-rails'
+  gem 'annotate-models'
 end
 
 group :test do
-  gem 'rspec', '2.5.0'
-  gem 'webrat', '0.7.1'
-  gem 'factory_girl_rails', '1.0'
+  gem 'rspec'
+  gem 'webrat'
+  gem 'factory_girl_rails'
 end
 
 # Bundle edge Rails instead:
