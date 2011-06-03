@@ -14,5 +14,5 @@ Booksaroundyou::Application.routes.draw do
 
   # Use rails special syntax for root route
   root :to => 'pages#home'
- 
+
 end
