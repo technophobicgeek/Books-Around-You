@@ -27,7 +27,16 @@ Set up heroku site   http://booksaroundyou.heroku.com
 
 Added basic models and controllers for user, books, copies
 
+6/3/2011
+
+Added devise, user model
+
+Trying to set up User show page, which will let users see a list of their books
+once they're signed in.
+
+Associations: need to make sure I understand all the semantics.
+
+Should try to seed database with initial data for development. How?
+
 TODO
 ----
-Add some models
-Devise for user management

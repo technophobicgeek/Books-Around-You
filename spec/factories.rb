@@ -4,7 +4,7 @@ Factory.define :user do |u|
   u.name      "PlusBzz"
   u.nickname  "plusbzz"
   u.email     "plusbzz@example.com"
-  u.password  "bzz"
+  u.password  "plusbzz"
 end
 
 Factory.define :book do |b|

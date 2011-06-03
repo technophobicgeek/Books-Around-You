@@ -1,12 +1,12 @@
 Booksaroundyou::Application.routes.draw do
 
-  devise_for :users
+  get "users/show"
 
-  get "copies/new"
-
-  get "books/new"
-
-  get "users/new"
+  devise_for  :users
+  resources   :users, :only => :show
+  
+  resources   :copies
+  resources   :books
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
