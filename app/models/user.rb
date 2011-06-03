@@ -32,5 +32,5 @@ class User < ActiveRecord::Base
                   
   has_many :copies, :dependent => :destroy
   
-  validates_presence_of :name
+  validates :nickname, :presence => true
 end
