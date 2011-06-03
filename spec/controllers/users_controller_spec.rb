@@ -1,12 +1,16 @@
 require 'spec_helper'
 
 describe UsersController do
-
   render_views
-
+  
   describe 'No user signed in' do
+    before(:each) do
+      @user = Factory(:user)
+    end
+    
     it "should redirect to sign_in page" do
-      get(:show).should redirect_to('/users/sign_in')
+      get :show, :id => @user.id
+      response.should redirect_to('/users/sign_in')
       response.status.should == 302
     end
   end
@@ -17,9 +21,24 @@ describe UsersController do
       sign_in @user
     end
     
-    it "should go to user home" do
+    it "should go to user profile page" do
       get :show, :id => @user.id
       response.should be_success
+    end
+
+    it "should have user name as title" do
+      get :show, :id => @user.id
+      response.should have_selector("title", :content => @user.name)
+    end
+    
+    it "should include the user's name" do
+      get :show, :id => @user
+      response.should have_selector("h1", :content => @user.name)
+    end
+
+    it "should have a profile image" do
+      get :show, :id => @user
+      response.should have_selector("h1>img", :class => "gravatar")
     end
     
   end

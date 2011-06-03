@@ -1,8 +1,9 @@
+/ The paths need to be dynamic
+/ If the user is not signed in versus signed in
 %header
   = link_to logo,root_path
   %nav.round
     %ul
       %li= link_to "Home", root_path
       %li= link_to "Help",help_path
-      %li= link_to "Sign out", destroy_user_session_path
-  
+      %li= render "devise/menu/login_items" 

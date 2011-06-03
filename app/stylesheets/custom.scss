@@ -1,10 +1,18 @@
+@mixin rounded($r) {
+  -moz-border-radius:    $r;
+  -webkit-border-radius: $r;
+  border-radius:         $r;
+}
+
 .container {
   width: 710px;
 }
 
 body {
   background: #cff;
+  font-family: "Century Gothic", sans-serif;
 }
+
 
 /* Header */
 
@@ -42,22 +50,28 @@ a {
     color: #069;
   }
   
-  /* Sign up button */
-
-  .signup_button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
-    width: 190px;
-    color: #fff;
-    background: #006400;
-    font-size: 150%;
-    font-weight: bold;
-    padding: 20px;
-  }
 }
 
+/* Sign up button */
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  background: #006400;
+  font-size: 150%;
+  padding: 20px;
+  color: #ffffff;
+  @include rounded(10px)
+}
+
+/* Rounded corners */
+
+
+.round {
+  @include rounded(10px)  
+}
 
 /* Navigation */
 
@@ -100,16 +114,6 @@ footer {
   }
 }
 
-
-
-/* Rounded corners */
-
-
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
 
 
 /* User show page */
