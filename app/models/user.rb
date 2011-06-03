@@ -31,6 +31,7 @@ class User < ActiveRecord::Base
                   :remember_me, :name, :nickname
                   
   has_many :copies, :dependent => :destroy
+  has_many :books,  :through => :copies
   
   validates :nickname, :presence => true
 end
