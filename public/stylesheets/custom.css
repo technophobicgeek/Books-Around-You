@@ -90,11 +90,9 @@ a:visited {
 /* Sign up button */
 /* line 76, ../../app/stylesheets/custom.scss */
 a.signup_button {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 20px;
   display: block;
   text-align: center;
-  width: 190px;
   background: #006400;
   font-size: 150%;
   padding: 20px;
@@ -102,10 +100,18 @@ a.signup_button {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html a.signup_button {
+  overflow-x: hidden;
 }
 
 /* Rounded corners */
-/* line 92, ../../app/stylesheets/custom.scss */
+/* line 91, ../../app/stylesheets/custom.scss */
 .round {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -113,51 +119,60 @@ a.signup_button {
 }
 
 /* Navigation */
-/* line 98, ../../app/stylesheets/custom.scss */
+/* line 97, ../../app/stylesheets/custom.scss */
 nav {
   float: right;
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
 }
-/* line 103, ../../app/stylesheets/custom.scss */
+/* line 102, ../../app/stylesheets/custom.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 106, ../../app/stylesheets/custom.scss */
+/* line 105, ../../app/stylesheets/custom.scss */
 nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0.2em 0;
 }
-/* line 110, ../../app/stylesheets/custom.scss */
+/* line 109, ../../app/stylesheets/custom.scss */
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
 }
-/* line 113, ../../app/stylesheets/custom.scss */
+/* line 112, ../../app/stylesheets/custom.scss */
 nav ul li a:visited {
   color: #09c;
 }
-/* line 116, ../../app/stylesheets/custom.scss */
+/* line 115, ../../app/stylesheets/custom.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* line 123, ../../app/stylesheets/custom.scss */
+h2.sign_form {
+  display: inline-block;
+  padding: 0.2em 0;
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 /* User show page */
-/* line 129, ../../app/stylesheets/custom.scss */
+/* line 134, ../../app/stylesheets/custom.scss */
 table.profile, table.book_entry {
   width: 100%;
   margin-bottom: 0;
 }
 
-/* line 137, ../../app/stylesheets/custom.scss */
+/* line 140, ../../app/stylesheets/custom.scss */
 td .main {
   width: 70%;
   padding: 1em;
 }
-/* line 141, ../../app/stylesheets/custom.scss */
+/* line 144, ../../app/stylesheets/custom.scss */
 td .sidebar {
   width: 30%;
   padding: 1em;
@@ -165,7 +180,7 @@ td .sidebar {
   background: #ffc;
 }
 
-/* line 149, ../../app/stylesheets/custom.scss */
+/* line 152, ../../app/stylesheets/custom.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;

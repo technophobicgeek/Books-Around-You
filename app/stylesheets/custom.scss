@@ -74,16 +74,15 @@ a {
 
 /* Sign up button */
 a.signup_button {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 20px;
   display: block;
   text-align: center;
-  width: 190px;
   background: #006400;
   font-size: 150%;
   padding: 20px;
   color: #ffffff;
-  @include rounded(10px)
+  @include rounded(10px);
+  @include column(4)
 }
 
 /* Rounded corners */
@@ -121,7 +120,13 @@ nav {
   }
 }
 
-
+h2.sign_form {
+  display: inline-block;
+  padding: 0.2em 0;
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 
 
 /* User show page */
@@ -130,8 +135,6 @@ table.profile, table.book_entry {
   width: 100%;
   margin-bottom: 0;
 }
-
-
 
 td{
   .main {
