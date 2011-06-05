@@ -1,56 +1,94 @@
-/* line 7, ../../app/stylesheets/custom.scss */
-.container {
-  width: 710px;
+/* line 10, ../../app/stylesheets/custom.scss */
+.two-col {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 12, ../../app/stylesheets/custom.scss */
+.two-col #header, .two-col #footer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .two-col #header, * html .two-col #footer {
+  overflow-x: hidden;
+}
+/* line 15, ../../app/stylesheets/custom.scss */
+.two-col #content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .two-col #content {
+  overflow-x: hidden;
 }
 
-/* line 11, ../../app/stylesheets/custom.scss */
+/* line 20, ../../app/stylesheets/custom.scss */
 body {
   background: #cff;
   font-family: "Century Gothic", sans-serif;
 }
 
 /* Header */
-/* line 19, ../../app/stylesheets/custom.scss */
+/* line 28, ../../app/stylesheets/custom.scss */
 header {
   padding-top: 20px;
 }
-/* line 21, ../../app/stylesheets/custom.scss */
+/* line 30, ../../app/stylesheets/custom.scss */
 header img {
   padding: 1em;
   background: #fff;
   height: 6em;
 }
 
-/* line 28, ../../app/stylesheets/custom.scss */
+/* line 37, ../../app/stylesheets/custom.scss */
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
   background: #fff;
 }
-/* line 33, ../../app/stylesheets/custom.scss */
+/* line 42, ../../app/stylesheets/custom.scss */
 section h1 {
   font-size: 200%;
 }
 
+/* Footer */
+/* line 49, ../../app/stylesheets/custom.scss */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 54, ../../app/stylesheets/custom.scss */
+footer nav {
+  float: none;
+}
+
 /* Links */
-/* line 42, ../../app/stylesheets/custom.scss */
+/* line 62, ../../app/stylesheets/custom.scss */
 a {
   color: #09c;
   text-decoration: none;
 }
-/* line 45, ../../app/stylesheets/custom.scss */
+/* line 65, ../../app/stylesheets/custom.scss */
 a:hover {
   color: #069;
   text-decoration: underline;
 }
-/* line 49, ../../app/stylesheets/custom.scss */
+/* line 69, ../../app/stylesheets/custom.scss */
 a:visited {
   color: #069;
 }
 
 /* Sign up button */
-/* line 56, ../../app/stylesheets/custom.scss */
+/* line 76, ../../app/stylesheets/custom.scss */
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
@@ -67,7 +105,7 @@ a.signup_button {
 }
 
 /* Rounded corners */
-/* line 72, ../../app/stylesheets/custom.scss */
+/* line 92, ../../app/stylesheets/custom.scss */
 .round {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -75,65 +113,51 @@ a.signup_button {
 }
 
 /* Navigation */
-/* line 78, ../../app/stylesheets/custom.scss */
+/* line 98, ../../app/stylesheets/custom.scss */
 nav {
   float: right;
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
 }
-/* line 83, ../../app/stylesheets/custom.scss */
+/* line 103, ../../app/stylesheets/custom.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 86, ../../app/stylesheets/custom.scss */
+/* line 106, ../../app/stylesheets/custom.scss */
 nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0.2em 0;
 }
-/* line 90, ../../app/stylesheets/custom.scss */
+/* line 110, ../../app/stylesheets/custom.scss */
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
 }
-/* line 93, ../../app/stylesheets/custom.scss */
+/* line 113, ../../app/stylesheets/custom.scss */
 nav ul li a:visited {
   color: #09c;
 }
-/* line 96, ../../app/stylesheets/custom.scss */
+/* line 116, ../../app/stylesheets/custom.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-/* line 106, ../../app/stylesheets/custom.scss */
-footer {
-  text-align: center;
-  margin-top: 10px;
-  width: 710px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 112, ../../app/stylesheets/custom.scss */
-footer nav {
-  float: none;
-}
-
 /* User show page */
-/* line 121, ../../app/stylesheets/custom.scss */
-table.profile {
+/* line 129, ../../app/stylesheets/custom.scss */
+table.profile, table.book_entry {
   width: 100%;
   margin-bottom: 0;
 }
 
-/* line 129, ../../app/stylesheets/custom.scss */
+/* line 137, ../../app/stylesheets/custom.scss */
 td .main {
   width: 70%;
   padding: 1em;
 }
-/* line 133, ../../app/stylesheets/custom.scss */
+/* line 141, ../../app/stylesheets/custom.scss */
 td .sidebar {
   width: 30%;
   padding: 1em;
@@ -141,7 +165,7 @@ td .sidebar {
   background: #ffc;
 }
 
-/* line 141, ../../app/stylesheets/custom.scss */
+/* line 149, ../../app/stylesheets/custom.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
