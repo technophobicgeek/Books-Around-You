@@ -4,7 +4,7 @@
       %td.main
         %h1
           = gravatar_for @user
-          = @user.name
+          = @user.nickname
       %td.sidebar.round
         %strong URL
         = link_to user_path(@user), @user

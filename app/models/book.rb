@@ -16,4 +16,5 @@
 class Book < ActiveRecord::Base
   has_many :copies, :dependent => :destroy
   has_many :users,  :through => :copies
+  has_many :authors,  :through => :authorships
 end
