@@ -21,6 +21,8 @@ describe UsersController do
       sign_in @user
     end
     
+    it "should redirect to user profile page"
+    
     it "should go to user profile page" do
       get :show, :id => @user.id
       response.should be_success
