@@ -13,6 +13,10 @@ describe UsersController do
       response.should redirect_to('/users/sign_in')
       response.status.should == 302
     end
+
+    it "should redirect to user profile page after signing in"
+    
+
   end
 
   describe 'User signed in' do
@@ -20,8 +24,6 @@ describe UsersController do
       @user = Factory(:user)
       sign_in @user
     end
-    
-    it "should redirect to user profile page"
     
     it "should go to user profile page" do
       get :show, :id => @user.id
