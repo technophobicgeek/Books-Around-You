@@ -14,6 +14,13 @@ class PagesController < ApplicationController
 
   def home
     @title = "Home"
+    @books = available_books
   end
 
+  private
+    
+    # Right now, just display a list of available books, maybe in reverse
+    # order of creation. Later, we'll get more sophisticated about this.
+    def available_books
+    end
 end

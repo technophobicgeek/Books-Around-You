@@ -1,12 +1,29 @@
-%table.profile{:summary => "Profile information"}
-  %tr
-    %td.main
-      %h1
-        = gravatar_for @user
-        = @user.name
-    %td.sidebar.round
-      %strong Name
-      = @user.name
-      %br/
-      %strong URL
-      = link_to user_path(@user), @user
+%section.round
+  %table.profile{:summary => "Profile information"}
+    %tr
+      %td.main
+        %h1
+          = gravatar_for @user
+          = @user.name
+      %td.sidebar.round
+        %strong URL
+        = link_to user_path(@user), @user
+        %br/
+        %strong Lent
+        %br/
+        %strong Borrowed
+        %br/
+        %strong Ratings
+        
+%section.round
+  %table.book_entry
+    %tr
+      %th
+        %strong Book Title
+      %th
+        %strong Copies owned
+    - @books.each do |b|    
+      %tr
+        %td= b.title
+        %td= "#{b.copies.size}"
+
