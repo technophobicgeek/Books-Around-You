@@ -27,4 +27,6 @@ class Book < ActiveRecord::Base
   scope :listed, where(" copies_count > '0' ")
   
   # Find all books with at least one available copy
+  
+  # callbacks
 end

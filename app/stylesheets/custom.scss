@@ -138,28 +138,33 @@ div.field, div.actions {
 }
 /* User show page */
 
-table.profile, table.book_entry {
-  width: 100%;
-  margin-bottom: 0;
-}
-
-td{
-  .main {
-    width: 70%;
-    padding: 1em;
-  }
-  .sidebar {
-    width: 30%;
-    padding: 1em;
-    vertical-align: top;
-    background: #ffc;
-  }
-}
-
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
 
+
+
+.book_list{
+  list-style-type: none;
+  overflow: auto;
+  .book_container{
+    height: 200px;
+    width: 200px;
+    float: left;
+  }  
+}
+
+.book_node {
+  height: 160px;
+  width: 160px;
+  margin: 20px;
+  background-color: #ccc;
+  text-align: center;
+  .book_name {
+    padding:10px;
+  }
+  @include rounded(10px)
+}
 
 

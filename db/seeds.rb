@@ -37,3 +37,4 @@
     )     
   end
 
+# Create some authors

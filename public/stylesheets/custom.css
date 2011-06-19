@@ -172,26 +172,35 @@ div.field, div.actions {
 
 /* User show page */
 /* line 141, ../../app/stylesheets/custom.scss */
-table.profile, table.book_entry {
-  width: 100%;
-  margin-bottom: 0;
-}
-
-/* line 147, ../../app/stylesheets/custom.scss */
-td .main {
-  width: 70%;
-  padding: 1em;
-}
-/* line 151, ../../app/stylesheets/custom.scss */
-td .sidebar {
-  width: 30%;
-  padding: 1em;
-  vertical-align: top;
-  background: #ffc;
-}
-
-/* line 159, ../../app/stylesheets/custom.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
+}
+
+/* line 148, ../../app/stylesheets/custom.scss */
+.book_list {
+  list-style-type: none;
+  overflow: auto;
+}
+/* line 151, ../../app/stylesheets/custom.scss */
+.book_list .book_container {
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+/* line 158, ../../app/stylesheets/custom.scss */
+.book_node {
+  height: 160px;
+  width: 160px;
+  margin: 20px;
+  background-color: #ccc;
+  text-align: center;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 164, ../../app/stylesheets/custom.scss */
+.book_node .book_name {
+  padding: 10px;
 }

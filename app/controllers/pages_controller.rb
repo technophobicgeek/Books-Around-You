@@ -20,7 +20,6 @@ class PagesController < ApplicationController
         :order => 'created_at DESC',
         :per_page => 16
       )
-  
   end
 
 end

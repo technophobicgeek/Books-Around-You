@@ -15,15 +15,11 @@
         %br/
         %strong Ratings
         
+
 %section.round
-  %table.book_entry
-    %tr
-      %th
-        %strong Book Title
-      %th
-        %strong Copies owned
-    - @books.each do |b|    
-      %tr
-        %td= b.title
-        %td= "#{b.copies_count}"
+  %ul.book_list
+    - @books.each do |b|
+      %li.book_container
+        .book_node
+          .book_name= b.title
   = will_paginate @books

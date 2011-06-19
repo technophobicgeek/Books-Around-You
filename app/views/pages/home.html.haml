@@ -8,15 +8,11 @@
 
 / if user is not signed in
 %section.round
-  %table.book_entry
-    %tr
-      %th
-        %strong Book Title
-      %th
-        %strong Copies listed
-    - @books.each do |b|    
-      %tr
-        %td= b.title
-        %td= "#{b.copies_count}"
-
-  = will_paginate @books unless @books.empty?
+  %ul.book_list
+    - @books.each do |b|
+      %li.book_container
+        .book_node
+          .book_name= b.title
+          .book_name= "Copies: #{b.copies_count}"
+  = will_paginate @books
+  
