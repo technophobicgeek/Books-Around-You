@@ -129,6 +129,13 @@ h2.sign_form {
 }
 
 
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.field.label {
+  font-weight: bold
+}
 /* User show page */
 
 table.profile, table.book_entry {

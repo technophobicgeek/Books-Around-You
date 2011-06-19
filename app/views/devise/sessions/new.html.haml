@@ -1,17 +1,22 @@
 %section.round
   %h2.sign_form Sign in
   = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-    %p
-      = f.label :email
-      %br/
-      = f.email_field :email
-    %p
-      = f.label :password
-      %br/
-      = f.password_field :password
-    - if devise_mapping.rememberable?
+    .field
       %p
-        = f.check_box :remember_me
-        = f.label :remember_me
-    %p= f.submit "Sign in"
-  = render :partial => "devise/shared/links"
+        = f.label :email
+        %br/
+        = f.email_field :email
+    .field
+      %p
+        = f.label :password
+        %br/
+        = f.password_field :password
+    - if devise_mapping.rememberable?
+      .field
+        %p
+          = f.check_box :remember_me
+          = f.label :remember_me
+    .actions
+      %p= f.submit "Sign in"
+    .actions
+      = render :partial => "devise/shared/links"

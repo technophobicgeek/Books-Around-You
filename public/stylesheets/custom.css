@@ -160,19 +160,29 @@ h2.sign_form {
   margin-bottom: 30px;
 }
 
+/* line 132, ../../app/stylesheets/custom.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 136, ../../app/stylesheets/custom.scss */
+.field.label {
+  font-weight: bold;
+}
+
 /* User show page */
-/* line 134, ../../app/stylesheets/custom.scss */
+/* line 141, ../../app/stylesheets/custom.scss */
 table.profile, table.book_entry {
   width: 100%;
   margin-bottom: 0;
 }
 
-/* line 140, ../../app/stylesheets/custom.scss */
+/* line 147, ../../app/stylesheets/custom.scss */
 td .main {
   width: 70%;
   padding: 1em;
 }
-/* line 144, ../../app/stylesheets/custom.scss */
+/* line 151, ../../app/stylesheets/custom.scss */
 td .sidebar {
   width: 30%;
   padding: 1em;
@@ -180,7 +190,7 @@ td .sidebar {
   background: #ffc;
 }
 
-/* line 152, ../../app/stylesheets/custom.scss */
+/* line 159, ../../app/stylesheets/custom.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
