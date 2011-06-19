@@ -1,2 +1,22 @@
 %section.round
   %h1 Home
+
+/ We need partials for two things:
+/ 1) if user is not signed in, they see all books without availability status etc
+/ 2) if user is signed in, they only see available books, with copies, location info etc
+
+
+/ if user is not signed in
+%section.round
+  %table.book_entry
+    %tr
+      %th
+        %strong Book Title
+      %th
+        %strong Copies listed
+    - @books.each do |b|    
+      %tr
+        %td= b.title
+        %td= "#{b.copies_count}"
+
+  = will_paginate @books unless @books.empty?

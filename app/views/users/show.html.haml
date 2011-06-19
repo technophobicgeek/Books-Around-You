@@ -25,5 +25,5 @@
     - @books.each do |b|    
       %tr
         %td= b.title
-        %td= "#{b.copies.size}"
+        %td= "#{b.copies_count}"
   = will_paginate @books

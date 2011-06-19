@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(:version => 20110605142720) do
     t.string   "title"
     t.string   "subtitle"
     t.string   "year"
+    t.integer  "copies_count"
+    t.string   "image_url"
   end
 
   create_table "copies", :force => true do |t|

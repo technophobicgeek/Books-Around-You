@@ -38,5 +38,9 @@ Associations: need to make sure I understand all the semantics.
 
 Should try to seed database with initial data for development. How?
 
+6/19/2011
+
+Trying to write a scope to find only books with available copies. First, we can try to find a book with any copies :)
+
 TODO
 ----
