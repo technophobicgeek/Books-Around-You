@@ -177,19 +177,38 @@ div.field, div.actions {
   margin-bottom: -15px;
 }
 
-/* line 148, ../../app/stylesheets/custom.scss */
+/* line 146, ../../app/stylesheets/custom.scss */
+table.profile {
+  width: 100%;
+  marginbottom: 0;
+}
+/* line 150, ../../app/stylesheets/custom.scss */
+table.profile td .main {
+  width: 70%;
+  padding: 1em;
+}
+/* line 154, ../../app/stylesheets/custom.scss */
+table.profile td .sidebar {
+  width: 30%;
+  padding: 1em;
+  verticalalign: top;
+  background: #ffc;
+}
+
+/* CSS for listing books both on user profile and home page */
+/* line 165, ../../app/stylesheets/custom.scss */
 .book_list {
   list-style-type: none;
   overflow: auto;
 }
-/* line 151, ../../app/stylesheets/custom.scss */
+/* line 168, ../../app/stylesheets/custom.scss */
 .book_list .book_container {
   height: 200px;
   width: 200px;
   float: left;
 }
 
-/* line 158, ../../app/stylesheets/custom.scss */
+/* line 175, ../../app/stylesheets/custom.scss */
 .book_node {
   height: 160px;
   width: 160px;
@@ -200,7 +219,52 @@ div.field, div.actions {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 164, ../../app/stylesheets/custom.scss */
+/* line 181, ../../app/stylesheets/custom.scss */
 .book_node .book_name {
   padding: 10px;
+}
+
+/* Error messages */
+/* line 188, ../../app/stylesheets/custom.scss */
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+/* line 193, ../../app/stylesheets/custom.scss */
+.field_with_errors label {
+  color: #fff;
+}
+
+/* line 199, ../../app/stylesheets/custom.scss */
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 206, ../../app/stylesheets/custom.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 7px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 216, ../../app/stylesheets/custom.scss */
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+/* line 221, ../../app/stylesheets/custom.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: none;
 }
