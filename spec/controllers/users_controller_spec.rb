@@ -38,12 +38,12 @@ describe UsersController do
 
     it "should have user name as title" do
       get :show, :id => @user.id
-      response.should have_selector("title", :content => @user.nickname)
+      response.should have_selector("title", :content => @user.name)
     end
     
     it "should include the user's name" do
       get :show, :id => @user
-      response.should have_selector("h1", :content => @user.nickname)
+      response.should have_selector("h1", :content => @user.name)
     end
 
     it "should have a profile image" do

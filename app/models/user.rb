@@ -33,5 +33,5 @@ class User < ActiveRecord::Base
   has_many :copies, :dependent => :destroy
   has_many :books,  :through => :copies
   
-  validates :nickname, :presence => true
+  validates_presence_of :name
 end
