@@ -6,9 +6,6 @@
           = gravatar_for @user
           = @user.name
       %td.sidebar.round
-        %strong URL
-        = link_to user_path(@user), @user
-        %br/
         %strong Lent
         %br/
         %strong Borrowed
@@ -17,9 +14,10 @@
         
 
 %section.round
-  %ul.book_list
+  .book_list
     - @books.each do |b|
-      %li.book_container
-        .book_node
-          .book_name= b.title
+      .book
+        .book_image= image_tag(b.image_url || default_image_url)
+        .book_details
+          .book_title= b.title
   = will_paginate @books

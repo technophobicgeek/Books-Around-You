@@ -162,26 +162,108 @@ table.profile {
 	 	
 
 /* CSS for listing books both on user profile and home page */
-.book_list{
-  list-style-type: none;
+
+.book_list {
   overflow: auto;
-  .book_container{
-    height: 200px;
-    width: 200px;
-    float: left;
-  }  
 }
 
-.book_node {
-  height: 160px;
-  width: 160px;
+.book { 
+  border: 1px solid;
+  float: left;
+  font-size: 0.916em;
+  height: 170px;
   margin: 20px;
-  background-color: #ccc;
-  text-align: center;
-  .book_name {
-    padding:10px;
+  padding: 5px;
+  width: 172px;
+  border: 2px solid #EFEFEF;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+
+}
+
+.book_image { 
+  overflow:hidden;
+  float:left;
+  width:84px;
+  height:125px;
+  margin_right:5px;
+  img {
+    width: 84px;
   }
-  @include rounded(10px)
+
+}
+
+
+.book_details { 
+  overflow:hidden;
+  float:left;
+  width:80px;
+  height:114px;
+}
+
+
+.book_title a, .book_title a:visited { 
+  overflow:hidden;
+  width:80px;
+  font_size: 110%;
+  font_weight: bold;
+  color: #000000;
+}
+
+.book_title a:hover {
+  color: #79AF13;
+}
+
+
+.book_author { 
+  color:#000000;
+}
+
+.book_buttons { 
+  overflow:hidden;
+  clear:both;
+}
+
+.book_button { 
+  float:left;
+  padding: 3px;
+  width: 50px;
+  text_align: center;
+  height: 25px;
+}
+
+#search_table .book_button {
+  float: none;
+  margin: 0 auto;
+}
+
+.book_button img {
+  width: 44px;
+}
+
+.book_button_lend {
+  color: #7EAF20;
+  font_weight: bold;
+  text_align: center;
+}
+
+.book_button_borrow {
+  color: #EA9711;
+  font_weight: bold;
+}
+
+.book_button_moreinfo {
+  padding_top: 4px;
+}
+
+.book_button_nl {
+  float: left;
+  margin: 4px 0 0;
+  padding: 2px;
+  width: 112px;
+  line_height: 9px;
 }
 
 /* Error messages */

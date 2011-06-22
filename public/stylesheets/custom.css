@@ -196,48 +196,134 @@ table.profile td .sidebar {
 }
 
 /* CSS for listing books both on user profile and home page */
-/* line 165, ../../app/stylesheets/custom.scss */
+/* line 166, ../../app/stylesheets/custom.scss */
 .book_list {
-  list-style-type: none;
   overflow: auto;
 }
-/* line 168, ../../app/stylesheets/custom.scss */
-.book_list .book_container {
-  height: 200px;
-  width: 200px;
-  float: left;
-}
 
-/* line 175, ../../app/stylesheets/custom.scss */
-.book_node {
-  height: 160px;
-  width: 160px;
+/* line 170, ../../app/stylesheets/custom.scss */
+.book {
+  border: 1px solid;
+  float: left;
+  font-size: 0.916em;
+  height: 170px;
   margin: 20px;
-  background-color: #ccc;
-  text-align: center;
+  padding: 5px;
+  width: 172px;
+  border: 2px solid #EFEFEF;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 181, ../../app/stylesheets/custom.scss */
-.book_node .book_name {
-  padding: 10px;
+
+/* line 186, ../../app/stylesheets/custom.scss */
+.book_image {
+  overflow: hidden;
+  float: left;
+  width: 84px;
+  height: 125px;
+  margin_right: 5px;
+}
+/* line 192, ../../app/stylesheets/custom.scss */
+.book_image img {
+  width: 84px;
+}
+
+/* line 199, ../../app/stylesheets/custom.scss */
+.book_details {
+  overflow: hidden;
+  float: left;
+  width: 80px;
+  height: 114px;
+}
+
+/* line 207, ../../app/stylesheets/custom.scss */
+.book_title a, .book_title a:visited {
+  overflow: hidden;
+  width: 80px;
+  font_size: 110%;
+  font_weight: bold;
+  color: #000000;
+}
+
+/* line 215, ../../app/stylesheets/custom.scss */
+.book_title a:hover {
+  color: #79AF13;
+}
+
+/* line 220, ../../app/stylesheets/custom.scss */
+.book_author {
+  color: #000000;
+}
+
+/* line 224, ../../app/stylesheets/custom.scss */
+.book_buttons {
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 229, ../../app/stylesheets/custom.scss */
+.book_button {
+  float: left;
+  padding: 3px;
+  width: 50px;
+  text_align: center;
+  height: 25px;
+}
+
+/* line 237, ../../app/stylesheets/custom.scss */
+#search_table .book_button {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 242, ../../app/stylesheets/custom.scss */
+.book_button img {
+  width: 44px;
+}
+
+/* line 246, ../../app/stylesheets/custom.scss */
+.book_button_lend {
+  color: #7EAF20;
+  font_weight: bold;
+  text_align: center;
+}
+
+/* line 252, ../../app/stylesheets/custom.scss */
+.book_button_borrow {
+  color: #EA9711;
+  font_weight: bold;
+}
+
+/* line 257, ../../app/stylesheets/custom.scss */
+.book_button_moreinfo {
+  padding_top: 4px;
+}
+
+/* line 261, ../../app/stylesheets/custom.scss */
+.book_button_nl {
+  float: left;
+  margin: 4px 0 0;
+  padding: 2px;
+  width: 112px;
+  line_height: 9px;
 }
 
 /* Error messages */
-/* line 188, ../../app/stylesheets/custom.scss */
+/* line 270, ../../app/stylesheets/custom.scss */
 .field_with_errors {
   margin-top: 10px;
   padding: 2px;
   background-color: red;
   display: table;
 }
-/* line 193, ../../app/stylesheets/custom.scss */
+/* line 275, ../../app/stylesheets/custom.scss */
 .field_with_errors label {
   color: #fff;
 }
 
-/* line 199, ../../app/stylesheets/custom.scss */
+/* line 281, ../../app/stylesheets/custom.scss */
 #error_explanation {
   width: 400px;
   border: 2px solid red;
@@ -246,7 +332,7 @@ table.profile td .sidebar {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 206, ../../app/stylesheets/custom.scss */
+/* line 288, ../../app/stylesheets/custom.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -257,13 +343,13 @@ table.profile td .sidebar {
   background-color: #c00;
   color: #fff;
 }
-/* line 216, ../../app/stylesheets/custom.scss */
+/* line 298, ../../app/stylesheets/custom.scss */
 #error_explanation p {
   color: #333;
   margin-bottom: 0;
   padding: 5px;
 }
-/* line 221, ../../app/stylesheets/custom.scss */
+/* line 303, ../../app/stylesheets/custom.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: none;

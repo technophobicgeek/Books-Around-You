@@ -8,11 +8,10 @@
 
 / if user is not signed in
 %section.round
-  %ul.book_list
+  .book_list
     - @books.each do |b|
-      %li.book_container
-        .book_node
-          .book_name= b.title
-          .book_name= "Copies: #{b.copies_count}"
+      .book
+        .book_image= image_tag(b.image_url || default_image_url)
+        .book_details
+          .book_title= b.title
   = will_paginate @books
-  

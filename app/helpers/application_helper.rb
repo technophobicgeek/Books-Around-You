@@ -12,4 +12,8 @@ module ApplicationHelper
     end 
   end
   
+  def default_image_url
+    "/images/owl_book.jpg"
+  end
+  
 end
